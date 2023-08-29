@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta name="description" content="대관예약시스템, KSPO&amp;CO, 한국체육산업개발주식회사" />
+<meta name="keyword" content="대관예약시스템, KSPO&amp;CO, 한국체육산업개발주식회사" />
+<meta name="author" content="대관예약시스템, KSPO&amp;CO, 한국체육산업개발주식회사" />
+
+<title>한국체육산업개발주식회사 - 대관예약시스템</title>
+<link rel="shortcut icon" type="image/x-icon" href="../images/pavicon.ico" />
+<link rel="stylesheet" type="text/css" href="../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="../js/jquery.placeholder.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/jquery.swiper.min.js"></script>
+<script type="text/javascript" src="../js/animatescroll.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/jquery.bpopup.min.js"></script>
+<script type="text/javascript" src="../js/ors.js"></script>
+
+</head>
+<body class="">
+
+<div id="wrap">
+
+
+			 <div style="text-align:center; margin-top:100px;">
+						<strong style="font-size:20px;">카드결제 취소신청 팝업 </strong>
+                             <span class="wi130 mo">
+                             	<!--a href="#" class="btn_base small off" id="layer01">취소신청</a-->
+                                <a href="#" id="layer01"> <span class="txt_label red">취소신청</span> </a>
+                             </span>
+			</div>
+             <br><br><br>       
+           	<div style="text-align:center;">
+						<strong style="font-size:20px;">카드결제 취소(환불) 안내 팝업 </strong>
+					
+							<span class="wi130">
+                             	<!--a href="#" class="btn_base small " style="width:" id="layer02">환불하기</a-->
+                                <a href="#" id="layer02"> <span class="txt_label sky">환불하기</span> </a>
+                             </span>
+			<br><br><br>  <strong style="font-size:18px;">* 팝업 화면 : 각 버튼 클릭</strong>
+			</div>
+                    
+           
+
+	<!-- popup_카드결제 취소신청 -->
+	<div id="popup01" class="layer">
+		<div class="layerPop">
+			<p class="popTitle">카드결제 취소신청</p>
+			<div class="layerCont">
+            	<!-- popup_내용 -->
+            	<div class="tbl_write_pop">
+                    <div class="tr">
+						<strong>취소시간</strong>
+						<div>
+							<span class="wiall">
+								<select name="" id="">
+									<option value="01">1시간</option>
+									<option value="02">2시간</option>
+                                    <option value="03">3시간</option>
+								</select>
+							</span>
+						</div>
+					</div>   
+                    <div class="tr">
+						<strong>취소사유</strong>
+						<div>
+							<span class="wiall">
+								<textarea name="" id="" style="height:120px;"></textarea>
+							</span>
+						</div>
+					</div>  
+			    </div>
+				 <!-- //popup_내용  -->
+                <!-- btn -->
+                <div class="btn_area">
+                    <a href="#none" class="btn_base on mid">취소신청</a>
+                </div>
+			   <!-- //btn -->    
+			</div>
+			<a href="#none" class="layerClose b-close">닫기</a>
+		</div>
+	</div>
+	<!-- //popup_카드결제 취소신청 -->	
+    
+	<!-- popup_카드결제 취소(환불) 안내 -->
+	<div id="popup02" class="layer_info">
+		<div class="layerPop_info">
+			<p class="popTitle">카드결제 취소(환불) 안내</p>
+			<div class="layerCont">
+            	<!-- popup_내용 -->
+            	<div>
+                    <div class="title">소타이틀</div>
+                    <!--div class="title2">
+                   		진행시 환불이 진행 됩니다. 
+                        부분 취소 환불의 경우 차액을 우선 결제 후 기존 결제 금액이 환불 처리가 진행 됩니다. <br>
+                        부분 취소 환불의 경우 차액을  결제 후 나타나는 환불버튼을 한번 더 눌러 카드 환불을  진행 해 주세요
+                    </div-->
+                    <div class="desc">
+						진행시 환불이 진행 됩니다. 
+                        부분 취소 환불의 경우 차액을 우선 결제 후 기존 결제 금액이 환불 처리가 진행 됩니다. <br>
+                        부분 취소 환불의 경우 차액을  결제 후 나타나는 환불버튼을 한번 더 눌러 카드 환불을  진행 해 주세요
+                    </div>
+                 </div>
+				 <!-- //popup_내용  -->
+			</div>
+			<a href="#none" class="layerClose b-close">닫기</a>
+		</div>
+	</div>
+	<!-- //popup_카드결제 취소(환불) 안내 -->	    
+	
+	<!-- popup -->
+	<script type="text/javascript">
+		$('#layer01').on('click', function(event) {
+			event.preventDefault();
+			$('#popup01').bPopup();
+		});
+
+		$('#layer02').on('click', function(event) {
+			event.preventDefault();
+			$('#popup02').bPopup();
+		});				
+	</script>	    
+</div>
+</body>
+</html>
